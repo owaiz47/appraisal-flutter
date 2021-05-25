@@ -32,6 +32,23 @@ class SkillController {
     }
   }
 
+  Future<bool> saveSkill(Skill skill) async {
+    String url = "$api_url/skills/skill";
+    Uri uri = Uri.parse(url);
+    final response = await http.post(uri,
+        body: jsonEncode(skill), headers: RestHeader.getRestHearders());
+
+    if (response.statusCode == 200 || response.statusCode == 201) {
+      return true;
+    } else if (response.statusCode == 401 || response.statusCode == 403) {
+      token = null;
+      authenticatedUser = null;
+      throw UnAuthorizedException("Session Expired");
+    } else {
+      throw Exception('Something went wrong.');
+    }
+  }
+
   Future<bool> saveSkills(List<Skill> skills) async {
     String url = "$api_url/skills";
     Uri uri = Uri.parse(url);

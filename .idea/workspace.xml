@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1cf9314-e16c-44e4-b6f4-9affc60b3834" name="Default Changelist" comment="" />
+    <list default="true" id="b1cf9314-e16c-44e4-b6f4-9affc60b3834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/appraisal/lib/components/add_skill_component.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appraisal/lib/components/employee_add_component.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appraisal/lib/controllers/SkillController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/controllers/SkillController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appraisal/lib/model/Employee.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/model/Employee.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appraisal/lib/views/add_employees_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/views/add_employees_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appraisal/lib/views/add_skill_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/views/add_skill_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appraisal/lib/views/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/views/home_screen.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1szNnxDZIv0H9BF0asLOC2dK3v0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -74,22 +88,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="632" height="657" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1621962602003" />
-    <state width="1411" height="307" key="GridCell.Tab.0.bottom" timestamp="1621940608894">
+    <state width="1411" height="307" key="GridCell.Tab.0.bottom" timestamp="1621966270242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608894" />
-    <state width="1411" height="307" key="GridCell.Tab.0.center" timestamp="1621940608894">
+    <state width="1411" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621966270242" />
+    <state width="1411" height="307" key="GridCell.Tab.0.center" timestamp="1621966270242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608894" />
-    <state width="1411" height="307" key="GridCell.Tab.0.left" timestamp="1621940608893">
+    <state width="1411" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621966270242" />
+    <state width="1411" height="307" key="GridCell.Tab.0.left" timestamp="1621966270242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608893" />
-    <state width="1411" height="307" key="GridCell.Tab.0.right" timestamp="1621940608894">
+    <state width="1411" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621966270242" />
+    <state width="1411" height="307" key="GridCell.Tab.0.right" timestamp="1621966270242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1411" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608894" />
+    <state width="1411" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621966270242" />
     <state x="10" y="0" key="SettingsEditor" timestamp="1621871757778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -131,7 +145,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
-          <line>201</line>
+          <line>203</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
@@ -146,27 +160,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
-          <line>94</line>
+          <line>93</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
-          <line>100</line>
+          <line>99</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
-          <line>104</line>
+          <line>103</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
-          <line>103</line>
+          <line>102</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
-          <line>97</line>
+          <line>96</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
@@ -218,26 +232,6 @@
           <url>file://$PROJECT_DIR$/appraisal/lib/components/manager_add_component.dart</url>
           <line>25</line>
           <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
-          <line>527</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
-          <line>529</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
-          <line>528</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
-          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
-          <line>530</line>
-          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

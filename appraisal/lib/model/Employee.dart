@@ -6,14 +6,14 @@ class Employee {
   int _id;
   String _email;
   String _employeeName;
-  String _designantion;
+  String _designation;
   double _experience;
   ExpUnit _expUnit;
   double _averageRating;
 
   Employee();
   Employee.json2obj(this._id, this._email, this._employeeName,
-      this._designantion, this._experience, this._expUnit, this._averageRating);
+      this._designation, this._experience, this._expUnit, this._averageRating);
 
   factory Employee.fromJson(Map<String, dynamic> json) {
     if (json == null) return new Employee();
@@ -21,7 +21,7 @@ class Employee {
       CleanJson.cleanJsonInteger('id', json),
       json['email'] as String,
       json['employeeName'] as String,
-      json['designantion'] as String,
+      json['designation'] as String,
       CleanJson.cleanJsonDouble('experience', json),
       getUnit(CleanJson.cleanJsonInteger('expUnit', json)),
       CleanJson.cleanJsonDouble('averageRating', json),
@@ -32,7 +32,7 @@ class Employee {
         'id': this.id,
         'email': this.email,
         'employeeName': this.employeeName,
-        'designantion': this.designantion,
+        'designation': this.designation,
         'experience': this.experience,
         'expUnit': getValue(this.expUnit),
         'averageRating': this.averageRating,
@@ -74,10 +74,10 @@ class Employee {
     _experience = value;
   }
 
-  String get designantion => _designantion;
+  String get designation => _designation;
 
-  set designantion(String value) {
-    _designantion = value;
+  set designation(String value) {
+    _designation = value;
   }
 
   String get employeeName => _employeeName;

@@ -72,16 +72,15 @@ class EmployeeController {
     }
   }
 
-  Future<Employee> saveEmployee(Employee employee) async {
+  Future<bool> saveEmployee(Employee employee) async {
     Employee emp;
-    String url = "$api_url/employees";
+    String url = "$api_url/employees/employee";
     Uri uri = Uri.parse(url);
     final response = await http.post(uri,
         body: jsonEncode(employee), headers: RestHeader.getRestHearders());
 
     if (response.statusCode == 200 || response.statusCode == 201) {
-      emp = Employee.fromJson(jsonDecode(response.body));
-      return emp;
+      return true;
     } else if (response.statusCode == 401 || response.statusCode == 403) {
       token = null;
       authenticatedUser = null;

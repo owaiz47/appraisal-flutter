@@ -2,6 +2,7 @@ import 'package:appraisal/UnAuthorizedException.dart';
 import 'package:appraisal/color_constants.dart';
 import 'package:appraisal/components/MyToast.dart';
 import 'package:appraisal/components/ToastChild.dart';
+import 'package:appraisal/components/employee_add_component.dart';
 import 'package:appraisal/components/my_text_field.dart';
 import 'package:appraisal/controllers/EmployeeController.dart';
 import 'package:appraisal/main.dart';
@@ -17,14 +18,6 @@ class AddEmployeesScreen extends StatefulWidget {
 
 class _AddEmployeesScreenState extends State<AddEmployeesScreen> {
   List<Employee> newEmployees = new List<Employee>();
-  TextEditingController empNameTextEditingController =
-      new TextEditingController();
-  TextEditingController empEmailTextEditingController =
-      new TextEditingController();
-  TextEditingController empDesigTextEditingController =
-      new TextEditingController();
-  TextEditingController empYearTextEditingController =
-      new TextEditingController();
   @override
   void initState() {
     // TODO: implement initState
@@ -48,8 +41,13 @@ class _AddEmployeesScreenState extends State<AddEmployeesScreen> {
                 Icons.add,
                 color: Colors.blueAccent,
               ),
-              onPressed: () {
-                buildShowAddFormDialog(context);
+              onPressed: () async {
+                AddEmployeeWidget addEmpWidget = new AddEmployeeWidget(context);
+                Employee employee = await addEmpWidget.buildShowAddFormDialog();
+                if (employee != null) {
+                  newEmployees.add(employee);
+                  setState(() {});
+                }
               },
             ),
             FlatButton(
@@ -128,84 +126,6 @@ class _AddEmployeesScreenState extends State<AddEmployeesScreen> {
     return false;
   }
 
-  List<Widget> buildFirstInfoWid({readOnly = false}) {
-    return [
-      context.isMobile
-          ? employeeTextField(readonly: readOnly)
-          : Expanded(
-              child: employeeTextField(readonly: readOnly),
-            ),
-      SizedBox(
-        height: 5.0,
-        width: 5.0,
-      ),
-      context.isMobile
-          ? emailTF(readonly: readOnly)
-          : Expanded(
-              child: emailTF(readonly: readOnly),
-            ),
-    ];
-  }
-
-  MyTextField employeeTextField({bool readonly = false}) {
-    return MyTextField(
-      readOnly: readonly,
-      icon: Icon(Feather.user),
-      controller: empNameTextEditingController,
-      showLabel: false,
-      hint: "Employee Name",
-    );
-  }
-
-  MyTextField emailTF({bool readonly = false}) {
-    return MyTextField(
-      readOnly: readonly,
-      icon: Icon(Icons.mail_outline),
-      controller: empEmailTextEditingController,
-      showLabel: false,
-      hint: "Employee Email",
-    );
-  }
-
-  buildSecondInfoWid({readOnly = false}) {
-    return [
-      context.isMobile
-          ? designationTF(readonly: readOnly)
-          : Expanded(
-              child: designationTF(readonly: readOnly),
-            ),
-      SizedBox(
-        height: 5.0,
-        width: 5.0,
-      ),
-      context.isMobile
-          ? experienceTF(readonly: readOnly)
-          : Expanded(
-              child: experienceTF(readonly: readOnly),
-            ),
-    ];
-  }
-
-  MyTextField designationTF({bool readonly = false}) {
-    return MyTextField(
-      readOnly: readonly,
-      icon: Icon(Icons.design_services_outlined),
-      controller: empDesigTextEditingController,
-      showLabel: false,
-      hint: "Designation",
-    );
-  }
-
-  MyTextField experienceTF({bool readonly = false}) {
-    return MyTextField(
-      readOnly: readonly,
-      icon: Icon(AntDesign.calendar),
-      controller: empYearTextEditingController,
-      showLabel: false,
-      hint: "Experience In Years",
-    );
-  }
-
   void deleteEmp(int index) {
     newEmployees.removeAt(index);
     setState(() {});
@@ -239,116 +159,6 @@ class _AddEmployeesScreenState extends State<AddEmployeesScreen> {
     } catch (e) {
       MyToast.somethingWentWrong(context);
     }
-  }
-
-  Future buildShowAddFormDialog(BuildContext contextin) {
-    return showDialog(
-        context: contextin,
-        builder: (_) => AlertDialog(
-              insetPadding: EdgeInsets.symmetric(horizontal: 10),
-              contentPadding: EdgeInsets.only(
-                  top: 36.0, left: 36.0, right: 36.0, bottom: 2.0),
-              content: Container(
-                height: contextin.isMobile
-                    ? MediaQuery.of(context).size.height * 0.7
-                    : MediaQuery.of(context).size.height * 0.25,
-                width: contextin.isMobile
-                    ? MediaQuery.of(context).size.width * 1
-                    : MediaQuery.of(context).size.height * 1,
-                child: Column(
-                  children: [
-                    Expanded(
-                      child: Column(
-                        children: [
-                          contextin.isMobile
-                              ? Column(
-                                  children: buildFirstInfoWid(),
-                                )
-                              : Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: buildFirstInfoWid(),
-                                ),
-                          SizedBox(
-                            height: 5.0,
-                          ),
-                          contextin.isMobile
-                              ? Column(
-                                  children: buildSecondInfoWid(),
-                                )
-                              : Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
-                                  children: buildSecondInfoWid(),
-                                )
-                        ],
-                      ),
-                    ),
-                    RaisedButton(
-                      color: Color(k_blue_color),
-                      onPressed: () {
-                        String name = empNameTextEditingController.text;
-                        String email = empEmailTextEditingController.text;
-                        String designation = empDesigTextEditingController.text;
-                        String years = empYearTextEditingController.text;
-                        if (name.replaceAll(" ", "").isEmpty ||
-                            email.replaceAll(" ", "").isEmpty ||
-                            designation.replaceAll(" ", "").isEmpty ||
-                            years.replaceAll(" ", "").isEmpty) {
-                          MyToast.showToast(
-                            context: contextin,
-                            toast: ToastChild(
-                                textColor: Colors.white,
-                                text: "Please add all information",
-                                icon: Icon(
-                                  Entypo.cross,
-                                  color: Colors.white,
-                                ),
-                                backgroundColor: Colors.red),
-                          );
-                          return;
-                        }
-                        if (!isNumeric(years)) {
-                          MyToast.showToast(
-                            context: contextin,
-                            toast: ToastChild(
-                                textColor: Colors.white,
-                                text:
-                                    "Only Numbers accepted in experience field",
-                                icon: Icon(
-                                  Entypo.cross,
-                                  color: Colors.white,
-                                ),
-                                backgroundColor: Colors.red),
-                          );
-                          return;
-                        }
-                        Employee emp = new Employee();
-                        emp.employeeName = name;
-                        emp.email = email;
-                        emp.designantion = designation;
-                        emp.experience = double.parse(years);
-                        newEmployees.add(emp);
-                        Navigator.of(contextin, rootNavigator: true)
-                            .pop('dialog');
-                        setState(() {
-                          empYearTextEditingController.text = "";
-                          empNameTextEditingController.text = "";
-                          empEmailTextEditingController.text = "";
-                          empDesigTextEditingController.text = "";
-                        });
-                      },
-                      child: Text(
-                        "Add",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ));
   }
 
   List<Widget> buildShowFirstInfoWid(Employee emp) {
@@ -398,7 +208,7 @@ class _AddEmployeesScreenState extends State<AddEmployeesScreen> {
   }
 
   Widget designShowField(Employee emp) {
-    return showcaseCard(emp.designantion, Icon(Icons.design_services_outlined));
+    return showcaseCard(emp.designation, Icon(Icons.design_services_outlined));
   }
 
   Widget yearsShowF(Employee emp) {
@@ -424,12 +234,5 @@ class _AddEmployeesScreenState extends State<AddEmployeesScreen> {
         ),
       ),
     );
-  }
-
-  bool isNumeric(String s) {
-    if (s == null) {
-      return false;
-    }
-    return double.parse(s, (e) => null) != null;
   }
 }

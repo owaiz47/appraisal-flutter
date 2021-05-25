@@ -2,6 +2,8 @@ import 'package:appraisal/UnAuthorizedException.dart';
 import 'package:appraisal/color_constants.dart';
 import 'package:appraisal/components/MyToast.dart';
 import 'package:appraisal/components/ToastChild.dart';
+import 'package:appraisal/components/add_skill_component.dart';
+import 'package:appraisal/components/employee_add_component.dart';
 import 'package:appraisal/components/manager_add_component.dart';
 import 'package:appraisal/components/my_text_field.dart';
 import 'package:appraisal/controllers/EmployeeController.dart';
@@ -397,6 +399,32 @@ class _HomeScreenState extends State<HomeScreen>
                                 onPressed: () {
                                   deleteEmployee(employees[i]);
                                 }),
+                            IconButton(
+                                icon: Icon(Icons.edit),
+                                onPressed: () async {
+                                  AddEmployeeWidget addWid =
+                                      new AddEmployeeWidget(context,
+                                          employee: employees[i]);
+                                  Employee emp =
+                                      await addWid.buildShowAddFormDialog();
+                                  if (emp != null) {
+                                    employees[i] = emp;
+                                    saveEmployee(emp);
+                                    setState(() {});
+                                    MyToast.showToast(
+                                      context: context,
+                                      toast: ToastChild(
+                                        backgroundColor: Colors.greenAccent,
+                                        icon: Icon(
+                                          Icons.check,
+                                          color: Colors.white,
+                                        ),
+                                        text: "Employee Update Successful",
+                                        textColor: Colors.white,
+                                      ),
+                                    );
+                                  }
+                                }),
                           ],
                         ),
                       ),
@@ -640,6 +668,31 @@ class _HomeScreenState extends State<HomeScreen>
                                   deleteSkill(skills[i]);
                                 }),
                           )*/
+                          IconButton(
+                              icon: Icon(Icons.edit),
+                              onPressed: () async {
+                                AddSkillWidget addWid = new AddSkillWidget(
+                                    context,
+                                    skill: skills[i]);
+                                Skill sk =
+                                    await addWid.buildShowAddFormDialog();
+                                if (sk != null) {
+                                  skills[i] = sk;
+                                  saveSkill(sk);
+                                  MyToast.showToast(
+                                    context: context,
+                                    toast: ToastChild(
+                                      backgroundColor: Colors.greenAccent,
+                                      icon: Icon(
+                                        Icons.check,
+                                        color: Colors.white,
+                                      ),
+                                      text: "Skill Updated Successfully",
+                                      textColor: Colors.white,
+                                    ),
+                                  );
+                                }
+                              }),
                         ],
                       ),
                     ),
@@ -961,6 +1014,38 @@ class _HomeScreenState extends State<HomeScreen>
     try {
       UserController userController = new UserController();
       bool saved = await userController.saveUser(user);
+      if (saved == null || !saved) throw Exception("failed");
+    } on UnAuthorizedException catch (e) {
+      MyToast.showSessionExpired(context);
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (BuildContext context) => MyApp()));
+      print(e);
+    } catch (e) {
+      MyToast.somethingWentWrong(context);
+      print(e);
+    }
+  }
+
+  void saveEmployee(Employee emp) async {
+    try {
+      EmployeeController employeeController = new EmployeeController();
+      bool saved = await employeeController.saveEmployee(emp);
+      if (saved == null || !saved) throw Exception("failed");
+    } on UnAuthorizedException catch (e) {
+      MyToast.showSessionExpired(context);
+      Navigator.pushReplacement(context,
+          MaterialPageRoute(builder: (BuildContext context) => MyApp()));
+      print(e);
+    } catch (e) {
+      MyToast.somethingWentWrong(context);
+      print(e);
+    }
+  }
+
+  void saveSkill(Skill sk) async {
+    try {
+      SkillController skillController = new SkillController();
+      bool saved = await skillController.saveSkill(sk);
       if (saved == null || !saved) throw Exception("failed");
     } on UnAuthorizedException catch (e) {
       MyToast.showSessionExpired(context);
