@@ -1,5 +1,6 @@
 import 'package:appraisal/color_constants.dart';
 import 'package:appraisal/model/User.dart';
+import 'package:appraisal/repository/UserStorage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -71,26 +72,28 @@ class AddManagerWidget {
                                           MainAxisAlignment.spaceEvenly,
                                       children: buildSecondInfoWid(),
                                     ),
-                              Container(
-                                width: 180.0,
-                                child: CheckboxListTile(
-                                    activeColor: Color(k_blue_color),
-                                    dense: true,
-                                    //font change
-                                    title: new Text(
-                                      "Admin",
-                                      style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600,
-                                          letterSpacing: 0.5),
-                                    ),
-                                    value: isAdmin,
-                                    onChanged: (bool val) {
-                                      setState(() {
-                                        isAdmin = val;
-                                      });
-                                    }),
-                              ),
+                              authenticatedUser.admin
+                                  ? Container(
+                                      width: 180.0,
+                                      child: CheckboxListTile(
+                                          activeColor: Color(k_blue_color),
+                                          dense: true,
+                                          //font change
+                                          title: new Text(
+                                            "Admin",
+                                            style: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.w600,
+                                                letterSpacing: 0.5),
+                                          ),
+                                          value: isAdmin,
+                                          onChanged: (bool val) {
+                                            setState(() {
+                                              isAdmin = val;
+                                            });
+                                          }),
+                                    )
+                                  : SizedBox(),
                             ],
                           ),
                         ),

@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1cf9314-e16c-44e4-b6f4-9affc60b3834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/appraisal/lib/components/add_skill_component.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/appraisal/lib/components/employee_add_component.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appraisal/lib/controllers/SkillController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/controllers/SkillController.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appraisal/lib/model/Employee.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/model/Employee.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appraisal/lib/views/add_employees_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/views/add_employees_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appraisal/lib/views/add_skill_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/views/add_skill_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appraisal/lib/components/manager_add_component.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/components/manager_add_component.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appraisal/lib/views/home_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/appraisal/lib/views/home_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +63,19 @@
       <option name="presentableId" value="Default" />
       <updated>1621871628274</updated>
     </task>
+    <task id="LOCAL-00001" summary="--Alhamdullillah">
+      <created>1621967037159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621967037159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="--Alhamdullillah" />
+    <option name="LAST_COMMIT_MESSAGE" value="--Alhamdullillah" />
   </component>
   <component name="WindowStateProjectService">
     <state x="202" y="148" width="1221" height="782" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621872244366">
@@ -84,6 +90,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="417" y="209" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621872223291" />
+    <state x="246" y="0" key="CommitChangelistDialog2" timestamp="1621967036408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="246" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1621967036408" />
     <state width="632" height="657" key="DebuggerActiveHint" timestamp="1621962602003">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -108,6 +118,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="10" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621871757778" />
+    <state x="140" y="104" key="Vcs.Push.Dialog.v2" timestamp="1621967038806">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="140" y="104" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1621967038806" />
     <state width="748" height="520" key="XDebugger.FullValuePopup" timestamp="1621944494596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -230,7 +244,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
           <url>file://$PROJECT_DIR$/appraisal/lib/components/manager_add_component.dart</url>
-          <line>25</line>
+          <line>26</line>
           <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>

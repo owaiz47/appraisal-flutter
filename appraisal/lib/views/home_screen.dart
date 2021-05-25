@@ -549,32 +549,34 @@ class _HomeScreenState extends State<HomeScreen>
                                     })
                                 : SizedBox(),
                           ),
-                          IconButton(
-                              icon: Icon(Icons.edit),
-                              onPressed: () async {
-                                AddManagerWidget addWidget =
-                                    new AddManagerWidget(context,
-                                        user: users[i]);
-                                User user =
-                                    await addWidget.buildShowAddFormDialog();
-                                if (user != null) {
-                                  users[i] = user;
-                                  saveUser(user);
-                                  setState(() {});
-                                  MyToast.showToast(
-                                    context: context,
-                                    toast: ToastChild(
-                                      backgroundColor: Colors.greenAccent,
-                                      icon: Icon(
-                                        Icons.check,
-                                        color: Colors.white,
-                                      ),
-                                      text: "User Updated",
-                                      textColor: Colors.white,
-                                    ),
-                                  );
-                                }
-                              }),
+                          authenticatedUser.admin
+                              ? IconButton(
+                                  icon: Icon(Icons.edit),
+                                  onPressed: () async {
+                                    AddManagerWidget addWidget =
+                                        new AddManagerWidget(context,
+                                            user: users[i]);
+                                    User user = await addWidget
+                                        .buildShowAddFormDialog();
+                                    if (user != null) {
+                                      users[i] = user;
+                                      saveUser(user);
+                                      setState(() {});
+                                      MyToast.showToast(
+                                        context: context,
+                                        toast: ToastChild(
+                                          backgroundColor: Colors.greenAccent,
+                                          icon: Icon(
+                                            Icons.check,
+                                            color: Colors.white,
+                                          ),
+                                          text: "User Updated",
+                                          textColor: Colors.white,
+                                        ),
+                                      );
+                                    }
+                                  })
+                              : SizedBox(),
                         ],
                       ),
                     ),
@@ -1015,6 +1017,10 @@ class _HomeScreenState extends State<HomeScreen>
       UserController userController = new UserController();
       bool saved = await userController.saveUser(user);
       if (saved == null || !saved) throw Exception("failed");
+      if (user.id == authenticatedUser.id) {
+        authenticatedUser.admin = user.admin;
+        setState(() {});
+      }
     } on UnAuthorizedException catch (e) {
       MyToast.showSessionExpired(context);
       Navigator.pushReplacement(context,
