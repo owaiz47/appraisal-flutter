@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b1cf9314-e16c-44e4-b6f4-9affc60b3834" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1szNnxDZIv0H9BF0asLOC2dK3v0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elahee\AndroidStudioProjects\appraisal\appraisal\assets\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/appraisal/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/appraisal/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b1cf9314-e16c-44e4-b6f4-9affc60b3834" name="Default Changelist" comment="" />
+      <created>1621871628274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621871628274</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="202" y="148" width="1221" height="782" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621872244366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="202" y="148" width="1221" height="782" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621872244366" />
+    <state x="466" y="99" key="#com.intellij.ide.util.MemberChooser" timestamp="1621943281362">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="466" y="99" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1621943281362" />
+    <state x="417" y="209" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1621872223291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="417" y="209" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621872223291" />
+    <state width="632" height="657" key="DebuggerActiveHint" timestamp="1621962602003">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="632" height="657" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1621962602003" />
+    <state width="1411" height="307" key="GridCell.Tab.0.bottom" timestamp="1621940608894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608894" />
+    <state width="1411" height="307" key="GridCell.Tab.0.center" timestamp="1621940608894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="307" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608894" />
+    <state width="1411" height="307" key="GridCell.Tab.0.left" timestamp="1621940608893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="307" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608893" />
+    <state width="1411" height="307" key="GridCell.Tab.0.right" timestamp="1621940608894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="307" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1621940608894" />
+    <state x="10" y="0" key="SettingsEditor" timestamp="1621871757778">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="10" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1621871757778" />
+    <state width="748" height="520" key="XDebugger.FullValuePopup" timestamp="1621944494596">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="748" height="520" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1621944494596" />
+    <state x="295" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1621942413227">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="295" y="258" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1621942413227" />
+    <state x="236" y="234" key="run.anything.popup" timestamp="1621946325358">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="236" y="234" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621946325358" />
+    <state x="242" y="0" width="1009" height="1036" key="search.everywhere.popup" timestamp="1621944050203">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="242" y="0" width="1009" height="1036" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1621944050203" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/helpers/ServiceCallHelper.dart</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/helpers/ServiceCallHelper.dart</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/helpers/ServiceCallHelper.dart</url>
+          <line>10</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
+          <line>201</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/components/MyToast.dart</url>
+          <line>40</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/UserController.dart</url>
+          <line>59</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
+          <line>94</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
+          <line>100</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
+          <line>104</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
+          <line>103</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/EmployeeController.dart</url>
+          <line>97</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/UserController.dart</url>
+          <line>84</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/UserController.dart</url>
+          <line>85</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/UserController.dart</url>
+          <line>88</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/RatingController.dart</url>
+          <line>36</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/RatingController.dart</url>
+          <line>42</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/controllers/RatingController.dart</url>
+          <line>39</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/add_manager_screen.dart</url>
+          <line>41</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/add_manager_screen.dart</url>
+          <line>45</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/add_manager_screen.dart</url>
+          <line>46</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/components/manager_add_component.dart</url>
+          <line>25</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
+          <line>527</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
+          <line>529</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
+          <line>528</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/appraisal/lib/views/home_screen.dart</url>
+          <line>530</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
